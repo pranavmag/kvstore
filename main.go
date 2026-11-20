@@ -3,5 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello KV Store!")
+	var m map[string]int
+
+	m["Key"] = 3
+
+	v, ok := m["Key"]
+
+	fmt.Println(v, ok)
 }
